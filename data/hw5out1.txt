@@ -1,0 +1,31 @@
+AddActivity 1006 loginMinnie
+AddActivity 1016 readEmailMinnie
+AddActivity 1030 loginMickey
+AddActivity 1031 deleteFileMickey
+AddActivity 1032 logoutMickey
+AddActivity 1046 logoutMinnie
+PrintSkipList
+(S3) empty
+(S2) 1031:deleteFileMickey
+(S1) 1016:readEmailMinnie 1031:deleteFileMickey 1046:logoutMinnie
+(S0) 1006:loginMinnie 1016:readEmailMinnie 1030:loginMickey 1031:deleteFileMickey 1032:logoutMickey 1046:logoutMinnie
+DisplayActivity 1006 loginMinnie
+DisplayActivitiesBetweenTimes 1000 1030 1006:loginMinnie 1016:readEmailMinnie 1030:loginMickey
+DisplayActivitiesFromStartTime 1024 1030:loginMickey 1031:deleteFileMickey 1032:logoutMickey 1046:logoutMinnie
+AddActivity 1025 openPasswordFile
+AddActivity 1026 readPasswordFile
+AddActivity 1027 writePasswordFile
+DisplayActivitiesToEndTime 1030 1006:loginMinnie 1016:readEmailMinnie 1025:openPasswordFile 1026:readPasswordFile 1027:writePasswordFile 1030:loginMickey
+AddActivity 1046 logoutMinnie existingTimeError
+DeleteActivity 1006
+DeleteActivity 1016
+DeleteActivity 1046
+DeleteActivity 1020 noTimeError 
+DisplayAllActivities 1025:openPasswordFile 1026:readPasswordFile 1027:writePasswordFile 1030:loginMickey 1031:deleteFileMickey 1032:logoutMickey
+DisplayActivitiesBetweenTime 1000 1020 none
+PrintSkipList
+(S4) empty
+(S3) 1026:readPasswordFile
+(S2) 1026:readPasswordFile 1031:deleteFileMickey
+(S1) 1026:readPasswordFile 1031:deleteFileMickey
+(S0) 1025:openPasswordFile 1026:readPasswordFile 1027:writePasswordFile 1030:loginMickey 1031:deleteFileMickey 1032:logoutMickey

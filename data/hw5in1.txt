@@ -1,0 +1,22 @@
+AddActivity 1006 loginMinnie
+AddActivity 1016 readEmailMinnie
+AddActivity 1030 loginMickey
+AddActivity 1031 deleteFileMickey
+AddActivity 1032 logoutMickey
+AddActivity 1046 logoutMinnie
+PrintSkipList
+DisplayActivity 1006
+DisplayActivitiesBetweenTimes 1000 1030
+DisplayActivitiesFromStartTime 1024
+AddActivity 1025 openPasswordFile
+AddActivity 1026 readPasswordFile
+AddActivity 1027 writePasswordFile
+DisplayActivitiesToEndTime 1030
+AddActivity 1046 logoutMinnie
+DeleteActivity 1006
+DeleteActivity 1016
+DeleteActivity 1046
+DeleteActivity 1020
+DisplayAllActivities
+DisplayActivitiesBetweenTimes 1000 1020
+PrintSkipList
